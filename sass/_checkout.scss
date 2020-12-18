@@ -1,0 +1,259 @@
+/* ---------------------------- */
+/* AQUI CHECKOUT OPCIONES ------*/
+/* -------------------------- */
+
+// .check-formulario
+.check-formulario {
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+    
+    hr {
+       margin-top: 5px;
+       margin-bottom: 5px;
+    }
+    
+    .form-style-check {
+        padding: 20px;
+        border-radius: 3px;
+        margin-top: 10px;
+        
+        input{
+            height:  25px;
+            font-size: 12px;
+            margin-bottom: 0;
+            border-radius: 0%;
+            margin-top: 0;
+        }
+        label {
+            font-size: 12.5px;
+            margin-bottom: 0;    
+        }
+    }
+    
+    select {
+        font-size: 13px;
+        padding: 0px;
+        height: 26px;
+        border-radius: 0%;
+    }
+    
+}
+
+// .check-info-right 
+.check-info-right {
+                
+    h5 {
+        @media only screen and (max-width: 765px) {
+            & {
+                margin-top: 20px;
+                border-top: 1px solid #a7a7a7;
+                padding-top: 20px;
+            }
+        }
+        color: #686868;
+    }
+
+    .list-group {
+        text-align: justify;
+        max-height: 450px;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        border: 1px solid #e4e4e4;
+        padding: 5px;
+    
+        .list-group li {
+            padding: 5px;
+            padding-right: 10px !important;
+        }
+    }
+
+    .media {
+
+        font-size: 13.5px;
+        
+        img {
+            width: 50px;
+        }
+        .card-link {
+            font-size: 15px !important;
+            color: #575757 !important;
+        }
+
+    }
+
+    .check-info-abajo{
+        font-size: 15px !important;
+    
+        .check-info-total div:last-child {
+            color: #6ec51c !important;
+            font-weight: bold;
+            letter-spacing: .6px;
+        }
+    }
+    
+    .check-precio {
+        display: grid;
+        grid-template-columns: 35% 20% 45%;
+        
+        span:last-child {
+            color: #6ec51c;
+            font-weight: 500;
+            text-align: right;
+            margin-left: auto;
+        }
+        span:nth-child(2) {
+            font-size: 12px;
+        }
+    
+        @media only screen and (max-width: 765px) {
+            & {
+                display: initial;
+            }
+        }
+    }
+}   
+
+// boton continuar
+.check-info-right-btn {
+    text-align: right;
+    padding: 15px 0px;
+    a{
+
+       background: var(--bg-tercero);
+       color: #fff;
+   }
+
+}
+
+/* ------------ */
+/* check-pago  */
+.check-formulario {
+
+    .accordion { 
+        /* background: #fff; */
+        width: 100% !important;
+        margin: 0;
+        min-width: 10px !important;
+        max-width: 700px;
+        width: 100% !important;
+        border-radius: 2px;
+        background: #fafafa6b;
+        border-bottom: none;
+        margin-bottom: 10px;
+
+        .card-header {
+            font-size: 13px;
+            padding: 10px 0 10px 0;
+            background: #ffffff;
+            margin-top: 0;
+            margin-bottom: 0;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            height: 35px;
+
+            i {
+                font-size: 15px;
+            }
+
+            .fa-chevron-down {
+                float: right;
+                margin-right: 10px;
+                color: #6ec51c;
+            }
+        }
+
+        .form-group  {
+            text-align: left;
+
+            span {
+                color: #080808;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+
+        .collapse {
+            margin-bottom: 0;
+            font-size: 13px;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 2px solid #d3d3d3;
+            background: #f8f8f873;
+            border-top: 2px solid #6ec51c;
+
+            p {
+                text-align: left;
+            }
+
+            .alert {
+                background: #fff;
+                
+                strong{
+                    color: #6ec51c;
+                    letter-spacing: .3px;
+                    font-size: 15px;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        input{
+            height: 23px;
+            font-size: 11.5px;
+            letter-spacing: .4px;
+            border-radius: 0%;
+        }
+        label {
+            font-size: 12.5px;
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: 765px) {
+            & {
+                margin-bottom: 30px;
+                
+                .card-header  {
+                    text-align: left;
+                    font-size: 15px;
+                    padding-top:  20px;
+                    padding-bottom: 35px;
+                }
+            }
+        }
+    }
+
+    .cards-container {
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .card {
+        background: transparent !important;
+        /* border-color: transparent; */
+        border-radius: 0;
+        margin: 0;    
+        box-shadow: none;
+    }
+}
+
+.check-formulario-revision {
+    font-size: 14px;
+    
+    h6 {
+        font-size: 15px;
+    }
+    
+    .text-muted {
+        color: #2e2e2e !important;
+    }
+}
+/* ---------------------------- */
+/* AQUI CHECKOUT OPCIONES ------*/
+/* -------------------------- */

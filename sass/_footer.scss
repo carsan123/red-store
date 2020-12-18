@@ -1,0 +1,164 @@
+/* ----------------------- */
+/*AQUI FOOTER */
+/* ---------------------- */
+.footer {
+    width: 100%;
+    margin: auto;
+    background:#0e0e0e;
+    color: #ffffff !important;
+    font-style: 14px;
+    padding: 60px 0 20px;
+    margin: auto;
+    padding:  20px 0;
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+
+        .app-logo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        
+            img {
+                width: 140px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .footer-col-2 {
+            flex: 2;
+            padding: 0 18px;
+
+            img {
+                width: 180px;
+                margin-bottom: 20px;
+            }
+            .btn-explora {
+                letter-spacing: .5px;
+                font-weight: 500;
+            }
+        }
+        .footer-col-1, .footer-col-3, .footer-col-4 {
+            flex-basis: 20%;
+            flex: 1;
+        }
+    }    
+
+    p, ul, a {
+        color: #f0f0f0;
+    }
+    h3 {
+        // color: #fff;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    hr {
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }    
+    form {
+        display: block;
+        justify-content: center;
+        
+        .btn-explora {
+            max-width: 150px;
+        }
+        .form-group {
+            input.form-control {
+                max-width: 300px;
+                text-align: center;
+                margin: auto;
+            }
+        }        
+        .form-check {
+            label{
+                color: #fff;
+            } 
+        }
+        label span {
+            color: #FFF;
+            font-size: 16px;
+            text-decoration: underline;
+            cursor: pointer;
+            &:hover {
+                color: #ff523b;
+            } 
+        }
+    } 
+    ul {
+        list-style: none;
+        
+        li {
+            padding: 2px 0;
+            &:hover a {
+                color: #ffffff;
+                text-decoration: underline;
+                text-decoration-color: var(--txt-ac-third);
+            }
+        }
+        
+        li::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            font-size: 15px;
+            color: #ff523b; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
+          }
+    }
+    .footer-ul {
+        text-align: left;
+    }
+    .copyright {
+        text-align: center;
+    }  
+
+    @media only screen and (max-width: 992px) {
+        .footer-ul {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+    @media only screen and (max-width: 768px) { 
+    
+        .row {
+            .footer-col-1, .footer-col-2{
+                flex-basis: 100%;
+                justify-content: center;  
+                border-bottom: 1px solid #ffffff;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            } 
+            .footer-col-3, .footer-col-4 {
+                flex-basis: 45%;
+                padding: 0px 5px;
+                justify-content: center;  
+                border-bottom: 1px solid #ffffff;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    
+    }
+
+    @media only screen and (max-width: 600px) {
+        .row {
+            border-bottom: none;
+        }
+    }
+
+}
+
+
+/* ----------------------- */
+/*AQUI FOOTER */
+/* ---------------------- */

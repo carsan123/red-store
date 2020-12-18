@@ -1,0 +1,94 @@
+// ----------------------------------
+// FILTRO DE ELEMENTOS T-GRID Y T-LISTA
+.filtro-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+    select {
+        border: 1px solid #ffbfb4;
+        padding: 2px;
+        font-size: 14px;
+        
+        &:focus {
+            outline: none;            
+        } 
+    }    
+    
+    
+}
+
+// box filtros todos los filtros
+.box-filtros {
+
+    /* nav-filtro */
+    .nav-filtro {
+    
+        h6 {
+            font-size: 14px;
+        }
+        nav ul li select{
+            height: 100%;
+            width: auto;
+            min-width: 50px;
+            font-size: 12.5px;
+            padding: 2px 0;
+        }
+        nav ul li select option {
+            padding: 10px 0;
+            font-size: 15px;
+        }
+    }
+    
+    .search-filtro {
+    
+        .form-inline input {
+            max-width: 150px !important;
+            height: 30px;
+            font-size: 14px;
+        }
+        button {
+            background: #fff;
+            color: #727272;
+            border: 1px solid #cccccc;
+            font-size: 13px;
+    
+            &:hover {
+                background: #fff;
+                color: var(--txt-ac-third);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .nav-filtro nav {
+        padding: 5px;
+    }
+    .nav-filtro nav ul li {
+        display: flex;
+    }
+    .filtro-div {
+        justify-content: center;
+        text-align: center;
+    }
+    .nav-filtro nav ul li select{
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+.search-filtro {
+    .dropdown-menu {
+        width: 300px;
+
+        img {
+            width: 60px;
+        }
+    }
+}
+// ----------------------------------
+// FILTRO DE ELEMENTOS T-GRID Y T-LISTA

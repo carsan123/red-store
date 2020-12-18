@@ -1,0 +1,75 @@
+/* paginacion */
+.page-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px  0;
+}
+@media only screen and (max-width: 768px) {
+    .page-btn {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.page-btn .pagination li {
+    margin-left: 12px;
+    border: 1px solid #ff523b;    
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+.page-btn .pagination li a{
+    border: none;
+    display: block;
+    color: #292929;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px !important;
+}
+.page-btn .pagination li:hover a {
+    background: #ff523b;
+    color: #fff;
+}
+.page-btn li.activo a {
+    background: #ff523b;
+    color: #fff;
+}
+.page-btn li.activo:hover a{
+    background: #ff3116;
+}
+.page-btn  li.disabled a{
+    background: #fff;
+}
+.page-btn  li.disabled:hover a{
+    background: #ffffff;
+    color: #797979;
+}
+.page-btn .pagination li.disabled {
+    border: 1px solid #797979;
+}
+.btn-grid-lista .btn-c-propio{
+    color: var(--txt-ac-third);
+    border-color: #e6e6e6;
+    border-radius: 5px !important;
+    font-size: 16px;
+}
+.btn-grid-lista .btn-c-propio:hover {
+    color: #FFF;
+    border-color: var(--bg-tercero);
+}
+.btn-grid-lista .btn-c-propio.active {
+    /* background: #ff523b !important; */
+    color: #8d8d8d!important;
+}
+.btn-grid-lista .btn-c-propio.active:hover {
+    border: 1px solid #d3d3d3;
+}
+/* ----------------------- */
+/* Grid Shop */
+/* ---------------------- */

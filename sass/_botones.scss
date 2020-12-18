@@ -1,0 +1,225 @@
+
+/* ------------------- */
+/* botones personales */
+/* ----------------- */
+/* btn a-propio color negro */
+.btn-a-propio {
+    color: #131313;
+    background:  var(--bg-segundo);
+    border: 1px solid #000000;
+    /* border-color: transparent; */
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .5px;
+}  
+  .btn-a-propio:hover {
+    color: #fff;
+    background-color: var(--bg-primero);
+  }  
+  .btn-a-propio:focus, .btn-a-propio.focus {
+    box-shadow: 0 0 0 0.125rem rgba(22, 22, 22, 0.5);
+  }  
+  .btn-a-propio.disabled, .btn-a-propio:disabled {
+    color: #29353d;
+    background-color: transparent;
+  }  
+  .btn-a-propio:not(:disabled):not(.disabled):active, .btn-a-propio:not(:disabled):not(.disabled).active,
+  .show > .btn-a-propio.dropdown-toggle {
+    box-shadow: none !important;
+    color: #fff;
+    background-color: (--bg-primero);
+  }
+  
+
+/* btn a-propio color Blanco */
+.btn-b-propio {
+    color: #131313;
+    background:  #fff;
+    border: 1px solid #000000;
+    /* border-color: transparent; */
+    font-weight: 600;
+    font-size: 13px;
+  }  
+  .btn-b-propio:hover {
+    color: #131313;
+    background-color: #e2e2e2;
+  }  
+  .btn-b-propio:focus, .btn-b-propio.focus {
+    box-shadow: 0 0 0 0.125rem rgba(22, 22, 22, 0.5);
+  }  
+  .btn-b-propio.disabled, .btn-b-propio:disabled {
+    color: #29353d;
+    background-color: transparent;
+  }  
+  .btn-b-propio:not(:disabled):not(.disabled):active, .btn-b-propio:not(:disabled):not(.disabled).active,
+  .show > .btn-b-propio.dropdown-toggle {
+    box-shadow: none !important;
+    color: #2b2b2b;
+    background-color: #ffffff;
+  }
+  /*  btn c outline naranja */
+  .btn-c-propio {
+    color: #3f3f3f;
+    border: 1px solid #ff523b;
+    background: #fff;
+    /* border-color: transparent; */
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .5px;
+  }  
+  .btn-c-propio:hover {
+    color: #fff;
+    background: #ff523b;
+  }  
+  .btn-c-propio:focus, .btn-a-propio.focus {
+    box-shadow: 0 0 0 0.125rem rgba(255, 118, 55, 0.5);
+  }  
+  .btn-c-propio.disabled, .btn-a-propio:disabled {
+    color: #29353d;
+    background-color: transparent;
+  }  
+  .btn-c-propio:not(:disabled):not(.disabled):active, .btn-c-propio:not(:disabled):not(.disabled).active,
+  .show > .btn-c-propio.dropdown-toggle {
+    box-shadow: none !important;
+    color: #ff523b;
+    background-color: #fff;
+  }
+
+/* btn d propio */
+ .btn-d-propio {
+    color: #fff;
+    border: 1px solid var(--bg-tercero);
+    background: var(--bg-tercero);
+    /* border-color: transparent; */
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .5px;
+  }  
+  .btn-d-propio:hover {
+    color: #fff;
+    background: #ff523b;
+  }  
+  .btn-d-propio:focus, .btn-a-propio.focus {
+    box-shadow: 0 0 0 0.125rem rgba(255, 118, 55, 0.5);
+  }  
+  .btn-d-propio.disabled, .btn-a-propio:disabled {
+    color: #29353d;
+    background-color: transparent;
+  }  
+  .btn-d-propio:not(:disabled):not(.disabled):active, .btn-d-propio:not(:disabled):not(.disabled).active,
+  .show > .btn-d-propio.dropdown-toggle {
+    box-shadow: none !important;
+    color: #ff523b;
+    background-color: #fff;
+  }
+/* btn-faded-primary */
+.btn-faded-primary {
+    color: #ff523b;
+    background-color: #f3f3f3;
+    border-color: transparent;
+    transition: .2s ease;
+}  
+.btn-faded-primary:hover {
+    color: #ffffff;
+    background-color: #ff523b;
+}  
+/* btn-faded-primary */
+/* .btn-explora */
+.btn-explora {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 5px 5px;
+    border-radius: 30px;
+    transition: background .5s;
+}
+.btn-explora:hover {
+    background: #ff3116;
+    color: #fff;
+}
+/* .btn-explora */
+
+/* ----------------------- */
+/* btn agregar a favoritos */
+/* ---------------------- */
+
+.btn-fav {
+    position: absolute;
+    top: .5rem;
+    left: 0rem;
+    color: #dddddd;
+    background-color: #fff !important;
+    font-size: 15px;
+    transition: .2s;
+    z-index: 1;
+  }
+  .card-producto .btn-fav {
+    position: absolute;
+    top: .3rem;
+    left: .2rem;
+    color: #dddddd;
+    background-color: #fff !important;
+    font-size: 13px;
+    transition: .2s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px !important;
+    height: 27px !important;
+    padding: 5px;
+  }
+  .btn-fav{
+    color: #838383;
+  }
+  .btn-fav:hover {
+    color: #ff8676;
+  }
+  .btn-fav:not(:hover):not(.active)::before {
+    color: #dddddd;
+  } 
+  .btn-fav:not(:disabled):not(.disabled):active, .btn-fav:not(:disabled):not(.disabled).active {
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 32, 32, 0.075) !important;
+  }
+  .btn-fav:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+    display: inline-block;
+    /* vertical-align: middle; */
+    font-weight:900;
+  }   
+  .btn-fav.active::before {
+    content: '\f004';
+    color: #ff523b;
+  }
+/* btn agregar a favoritos */
+
+/* .btn-icon */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px !important;
+  height: 38px;
+  padding: 0 !important;
+}  
+.btn-group-lg > .btn-icon, .btn-icon.btn-lg, .btn-group-lg > .btn-icon.btn {
+  width: 48px !important;
+  height: 48px;
+}
+
+.btn-group-sm > .btn-icon, .btn-icon.btn-sm, .btn-group-sm > .btn-icon.btn {
+  width: 31px !important;
+  height: 31px;
+}
+
+.btn-group-xs > .btn-icon, .btn-icon.btn-xs, .btn-group-xs > .btn-icon.btn {
+  width: 24px !important;
+  height: 24px;
+}
+/* .btn-icon */
+
+/* ----------------------- */
+/* Botones Personales */
+/* ---------------------- */ 

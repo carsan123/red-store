@@ -1,0 +1,361 @@
+/* -------------------- */
+/* AQUI CUENTA PAGINAS */
+/* ------------------ */
+.account-page {
+    padding: 50px 0;
+
+    .form-container {
+        background: #ffffff;
+        width: 300px;
+        height: 450px;
+        position: relative;
+        text-align: center;
+        padding: 40px 0;
+        margin: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        span {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #555;
+            cursor: pointer;
+            width: 100px;
+            display: inline-block;
+        }
+
+        form {
+            max-width: 300px;
+            padding: 0 20px;
+            position: absolute;
+            top: 130px;
+            transition: transform 1s;
+
+            a {
+                font-size: 14px;
+                text-decoration: underline;
+            }
+
+            .btn-explora {
+                width: 100%;
+                border: none;
+                cursor: pointer;
+                margin: 10px 0;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            border-radius: 3px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+        }
+
+        #LoginForm {
+            left: 0px;
+        }
+        #RegForm {
+            left: 300px;
+            width: 100%;
+        }
+        #Indicator {
+            width: 100px;
+            border: none;
+            background: #ff523b;
+            height: 3px;
+            margin-top: 8px;
+            transform: translateX(0px);
+            transition: transform 1s;
+        }
+
+        .from-group {
+            cursor: pointer;
+            font-size: 13px;
+            text-decoration: underline;
+        
+            .from-group input{  
+               width: auto !important;
+               height: auto !important;
+               margin: 0px 0 !important;
+               padding: 0 10px !important;
+               border: 1px solid #ccc !important;
+           }
+        }
+    }
+
+    .form-card {
+        max-width: 300px;
+        border-radius: 5px;
+        margin: auto;
+        
+        .card-body {
+            padding: 20px;
+        }
+        h5 {
+            font-weight: bold;  
+            color: #555;
+            font-size: 16px;
+        }
+        .form-group i {
+            color: #b3b3b3;
+        }
+        .btn-explora {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    
+    .form-btn {
+        display: inline-block;
+    }
+
+    .ingresa-icons {    
+        a {
+            text-decoration: none !important;              
+        }           
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 15px;
+            height: 15px;
+        }
+        label {
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 20px;
+            font-size: 13px;
+        }
+    }
+
+}
+
+/* ---------------------------*/
+/* cuenta perfil ------------*/
+.perfil-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+    @media only screen and (max-width: 765px) {
+        & {
+            justify-content: center;
+        }
+    }
+    
+    .list-group {
+    
+        a{
+           font-size: 13px;
+           padding: 5px 8px;
+           
+           i {
+               margin-right: 10px;
+               margin-top: 2px;
+           }
+           &:hover i {
+            color: var(--txt-ac-third);
+           }
+    
+           .badge {
+               border: 1px solid #ff523b;
+               background: #ffffff;
+               color: #3f3f3f;
+               margin-left: 30px;
+           } 
+           &:hover .badge {
+            background: var(--bg-tercero);
+            color: #ffffff;
+            }    
+        }
+    
+       .active {
+           background: var(--bg-segundo);
+           color: var(--txt-ac-primary);
+           border-top: 1px solid #e4e4e4;
+           border-bottom: 3px solid var(--txt-ac-third);
+           font-weight: 700;
+           letter-spacing: .5px;
+           font-size: 14px;
+           
+           i {
+               color: var(--txt-ac-third);
+           }
+       }
+    }
+    
+    .perfil-box-user {
+    
+        img {
+           width: 100px;
+           height: 100px;
+           border-radius: 10% !important;
+           
+           h5 {
+               font-size: 17px;
+           }
+       }
+    }
+}
+
+/* form-perfil */
+.form-perfil {
+    
+    hr {
+        background: var(--bg-tercero);
+        height: 2px;
+    }
+    
+    form {
+
+        input {
+            height: 27px;
+            font-size: 13px;
+            border-radius: 0%;
+        }
+        label {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+    }
+
+    select {
+        font-size: 13px;
+        height: 27px;
+        padding-top: 3px;
+        border-radius: 0%;
+    }
+    
+    .form-row {
+        margin-bottom: 0;
+    }
+    .input-number-cuenta  {
+        margin-bottom: 20px;
+        padding-left: 5px;
+    }
+    .input-number-cuenta:hover {
+        transform: translateY(0px);
+    } 
+}
+/* ---------------------------*/
+/* cuenta perfil ------------*/
+
+/* cuenta lista de pedidos */
+.container-lista-pedidos {
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+
+        thead {
+    
+            tr{
+                height: 27px !important;
+                color: #353535;
+                font-size: 14px;
+                border-bottom: 3px solid var(--bg-tercero) ;
+            }
+            
+            th {
+                font-weight: 500;
+                margin-bottom: 10px !important;
+            }
+        }
+        
+        tbody{
+            font-size: 13px;
+        
+            tr {
+                height: 30px;
+                border-bottom: 1px solid #bebebe;
+                &:hover {
+                    background: #f5f4f4;
+                } 
+                
+            }
+            
+            th  {
+                font-size: 14px;
+                font-weight: 600;
+                span{
+                    font-weight: 500;
+                }
+            }            
+        }
+        
+        th {
+            padding-left: 5px;
+        }
+    }
+
+}
+
+/* -------------- */
+/* lista-favoritos */
+.lista-favoritos {
+font-size: 13px;
+
+    li {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .media {
+
+        .media-body {
+            margin-left: 15px;
+        }
+        img {
+            width:65px;
+        }
+        button {
+            font-size: 10px;
+            letter-spacing:  1px;
+
+            i {
+                font-size: 8px;
+            }
+        }
+
+    }
+
+    .fa-times {
+        color: #777;
+    }
+
+    .card-link {
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+    
+    .favorito-precio {
+        color: #707070;
+    }
+    
+    .container-lista-group {
+        max-height: 450px;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        border: 1px solid #cfcfcf;
+        padding: 0px 5px;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        img{ 
+           width: 50px;
+        }
+    }
+}
+
+/* -------------------- */
+/* AQUI CUENTA PAGINAS */
+/* ------------------ */

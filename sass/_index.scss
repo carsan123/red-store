@@ -1,0 +1,100 @@
+/* ----------------------- */
+/* Index Elementos */
+/* ---------------------- */
+/* ofertas -------------------*/
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px;
+
+    .row {
+        // align-items: center;
+        justify-content: center;
+    }
+    .offer-img {
+        max-width: 300px !important;
+    }
+    p {
+        color: #555;
+    } 
+    .offer .row {
+        justify-content: center;
+    }
+}
+
+/* testimonial --------------- */
+.testimonial {
+    width: 100%;
+
+    .row {
+        justify-content: space-around;
+    }
+
+    .card {
+        text-align: center;
+        padding: 20px 20px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform .5s;
+        min-width: 250px;
+
+        img {
+            width: 80px;
+            border-radius: 50px;
+            margin: 20px auto ;
+        }
+        &:hover{
+            transform: translateY(-10px);
+        }
+        p {
+            font-size: 14px;
+            margin: 12px 0;
+            color: #777;
+        }
+        h3 {
+            font-weight: 600;
+            color: #555;
+            font-size: 16px;
+        }
+        .fa.fa-quote-left {
+            font-size: 30px;
+            color: #ff523b;
+        }
+    }
+    
+    @media only screen and (max-width: 900px) {
+        .card {
+            min-width: 200px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .card {
+            min-width: 300px;
+            margin-left: -20px;
+        }
+    }
+    
+
+}
+
+/* seccion de imagenes brands */
+/* ------------------ */
+.brands {
+    img {
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+    img:hover {
+        filter: grayscale(0%);
+    }
+
+}
+/* seccion de imagenes brands */
+/* ------------------ */
+
+
+/* ----------------------- */
+/* Index Elementos */
+/* ---------------------- */

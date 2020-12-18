@@ -1,0 +1,476 @@
+/* Cards tarjetas */
+.card {
+  border: 0px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); 
+  position: relative;
+  
+  .card-img-top{
+    border-radius: 0%;
+    width: 100%;
+  }
+  .card-body {
+    padding: 5px;
+    margin-bottom: auto;
+  }
+  .card-title  {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-bottom: auto;
+  }
+  .card-footer {
+    background: #ffffff;
+    border-top: none;
+    margin-top: auto;
+    padding: 3px;
+  }
+}
+
+.card-st1 {
+  border: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+// rating -----
+.rating {
+  text-align: center;
+  /* margin-bottom: 0; */
+  
+  i {
+    color: #ffb13b !important;
+    font-size: 12px;
+    margin-left: -2px;
+  }
+}// rating -----
+
+
+.owl-carousel {
+  .card {
+    .card-body {
+      margin-bottom: auto;
+    }
+    .card-title {
+      height: 30px;
+      // background: rgb(243, 18, 18);
+    }
+    .card-footer {
+      // background: #000;
+      // margin-top: 20px;
+    }
+  }
+}
+
+
+/* card-producto */
+.card-producto {
+  text-align: left;
+
+  // .card-title
+  .card-title {
+    color: #3d3d3d !important;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  // .card-title
+
+  // card body
+  .card-body {
+    margin-top: 4px;
+    text-align: left;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  // card body
+
+  // card footer  
+  .card-footer {
+    margin-top: auto;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: none;
+    margin-top: auto;
+    padding: 3px;
+    border-top: 1px solid #e7e7e7;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    button{
+      font-size: 11px;
+      border-radius: 7%;
+      padding: 3px 7px;
+      letter-spacing: .2px;
+      &:hover {
+        background: #ff523be0;
+      }
+    }
+
+
+  }
+  // card footer  
+
+  .card-price {
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #1f1f1f;
+    display: block;
+  
+    s {
+      font-size: 12.5px;
+      color: #3f3f3f;
+      text-decoration-color: #c5c5c5;
+    }
+  }
+
+  // select 
+  select {
+  font-size: 11px;
+  min-width: 20px;
+  max-width: 70px;
+  height: 20px;
+  padding: 0px 8px 3px 0;
+  
+    option {
+      font-size: 12px;
+    }
+  }
+  // select 
+  
+  // cantidad input 
+  .box-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .spinner {
+      margin-top: 0;
+      height: 20px;            
+    }
+
+    .btn-outline-primary{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }  
+    
+    label{
+      font-size: 10px;
+      margin-bottom: 0;
+      margin-right: 3px;
+    }
+    
+    input {
+      width: 40px;
+      height: 20px;
+      text-align: center;
+      font-size: 12px;
+      padding: 0 3px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .spinner {
+          margin-top: 0;
+          height: 30px;            
+      }
+      
+      .btn-outline-primary{
+          display: block;
+      }            
+  
+      label{
+          display: none;    
+      }    
+    }
+    @media only screen and (max-width: 768px) {
+      .box-input {
+      
+          label{
+              font-size: 12px;
+              display: block;    
+          }    
+      }
+  }
+  }
+  // cantidad input 
+
+  // rating
+  .rating {
+    text-align: right !important;
+    
+    .rating i {
+      font-size: 10px;
+    }
+  }
+  // rating
+
+  // badge
+  .badge {
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 4px;
+    position: absolute;
+    top: 3px;
+    right: 3px ;
+    border-radius: 10%;
+    background: #ffffff;
+  }
+  // badge
+
+  .d-flex {
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  @media only screen and (max-width: 992px) { 
+    select {
+        font-size: 13px;
+        height: 25px;        
+        padding: 0px 10px 0px 3px;
+    }  
+  
+    .rating{
+      margin-bottom: 5px;
+  
+      i {
+        font-size: 11px !important;
+        margin-right: 1px;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .card-title {
+        font-size: 15px !important;
+        font-weight: 500;
+    }
+
+    .card-price {
+      font-size: 16px !important;
+      font-weight: 400;
+      color: #1f1f1f;
+      display: block;
+
+      s {font-size: 13px;}
+    }
+  
+    .card-footer {
+  
+      .btn-c-propio {
+          padding: 4px 10px;
+          font-size: 12px;
+      }
+    }
+    
+    select {
+      min-width: 80px;      
+    }   
+
+  
+  }
+}
+/* card-producto */
+
+
+/* card-producto lista */
+.card-pdto-list {
+  display: grid;
+  // grid-gap: 20px;
+  padding: 0;
+  grid-template-columns: 40% 60%;
+
+  
+  & > a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+
+  .card-body {
+    padding: 10px;
+    text-align: left !important;
+
+    p {
+      text-align: left;
+      font-size: 12px;
+    }
+
+    .card-link {
+      font-weight: 500;
+      display: block;
+      font-size: 18px !important;
+      margin-bottom: 10px !important;
+      text-align: left;
+      padding: 0;
+    }  
+
+    .rating {
+        margin-bottom: 10px !important;
+
+        i {
+          margin-right: 2px;
+        }
+    }
+
+    .precio-lista {
+      display: flex;
+      align-items: flex-end;
+      
+      
+      s {margin-right: 5px; font-size: 13px;}
+      h5 {margin-right: 5px; 
+        color: #6EC51C;
+        font-size: 17px; 
+        font-weight: 500;
+      }
+    }
+
+    .badge {
+      margin-right: 5px;
+    }
+
+    .opciones-select {
+      display: flex;
+      margin: 15px 0;
+  
+      select {
+          margin-right: 10px;
+          font-size: 13px;
+          padding: 3px 8px 3px 0;
+          
+          option{
+              font-size: 15px;
+          }
+      }
+    }
+  }
+
+  .card-footer {
+    display: block;
+    // display: flex;
+    // align-items: center;
+
+    .btn-c-propio {
+      height: 30px;
+      margin-top: 12px;
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+
+  .box-input {
+    
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 0px;   
+    font-size: 10px;
+    padding: auto;
+    font-weight: normal;
+          
+    .btn-outline-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    button {
+      padding: 3px 8px;
+      font-size: 12px;
+      letter-spacing: .2px;
+    }        
+  
+    label{
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 5px;
+        margin-bottom: 0px;
+        
+    }
+    input {
+        padding: 0;
+        margin: 0;
+        font-size: 12px !important;
+        max-width: 50px !important;
+        width: 50px !important;
+        padding: 0 3px;
+        max-width: 50px;
+        text-align: center;
+        font-size: 15px;
+        height: 30px;
+        
+    }
+  }
+
+  @media (min-width: 576px) {
+    .card-pdto-list .card-title {
+      font-size: 1.25rem;
+    }
+  }  
+
+  @media (min-width: 576px) {
+    .badge {
+      font-size: 90%;
+    }
+  } 
+
+  @media only screen and (max-width: 992px) {
+    .card-footer {
+      display: block;
+  
+      .btn {
+        font-size: 15px !important;
+        font-weight: 500;
+      }
+  
+    }
+
+    .box-input {
+     margin-bottom: 15px; 
+     text-align: center; 
+  
+       .spinner {
+           margin-top: 0;
+           height: 30px;            
+       }
+       
+       .btn-outline-primary{
+           display: block;
+       }     
+   
+    }    
+  }
+  @media only screen and (max-width: 768px) {
+  
+    .box-input {
+      margin-bottom: 15px;
+      label{
+          font-size: 12px;
+          display: block;    
+      }
+    }  
+      
+  }
+}
+/* card-producto lista */
+
+// -----------------------------
+// badge .card-producto
+.card-producto .badge {background: #fff; color: #2b2b2b; border: none;}
+.card-producto .badge i { color: #fdcd2e}
+// -----------------------------
+// badge .card-pdto-list
+.card-pdto .badge {background: #fff; color: #2b2b2b; border: none; border: 1px solid #ccc;}
+.card-pdto .badge i { color: #ffb13b;}
+
+/* .card-producto .badge-primary { border: 1px solid #6ec51c;}
+.card-producto .badge-secondary{ border: 1px solid #585858;}
+.card-producto .badge-info{ border: 1px solid #585858;}
+.card-producto .badge-success { border: 1px solid #1c49c5;}
+.card-producto .badge-danger { border: 1px solid #fa5454;}
+.card-producto .badge-dark { border: 1px solid #222222;}
+.card-producto .badge-warning { border: 1px solid #f7e228;}  */

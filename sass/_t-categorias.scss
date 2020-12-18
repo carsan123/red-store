@@ -1,0 +1,52 @@
+/* ----------------------- */
+/* Categorias */
+/* ---------------------- */
+.categories {
+    margin: auto;
+    text-align: center;
+
+    h4 {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    img {
+        overflow: hidden; 
+        transform: scale(1);
+        transition: transform .5s ease;
+    }
+    img:hover {
+        transform: scale(1.1); 
+    }
+    @media only screen and (max-width: 700px) {
+        h4 {font-size: 17px;}
+        img {min-width: 100px;}
+    }
+}
+
+.servicios-bloque  {
+
+    a {
+  
+      button {
+        transition: .6s ease all;
+      }
+      &:hover {
+        button {
+          background: var(--txt-ac-third);
+          color: #ffffff;
+      }
+      }
+      
+      .media {
+        .img-card-header {
+          width: 30px;
+          height: 30px;
+      }
+  
+      }
+    }
+  }
+/* ----------------------- */
+/* Categorias */
+/* ---------------------- */

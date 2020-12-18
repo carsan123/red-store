@@ -1,0 +1,333 @@
+// -----------------------------
+//  single-poduct details ------
+// ----------------------------
+.single-poduct {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+
+    p {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 27px;
+    }
+    h4 {
+        margin: 0px 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: #6ec51c;
+        // color: #c55a1c;
+    }
+    select {
+        display: block;
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        height: 35px;
+        font-size: 12px;
+        min-width: 100px;
+        max-width: 200px;
+
+        option {
+            font-size: 14px;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    .fa {
+        color: #ff523b;
+    }
+
+    // contenido opciones del producto
+    .product-info {
+        display: grid;
+        grid-gap: 20px 30px;;
+        grid-template-columns: 40% 60%;
+        justify-content: center;
+        align-items: start;
+        margin-top: 30px;
+        
+        .detalles-single-product {
+            
+            s {
+                text-decoration-color: #9b9b9b;
+            }
+            .rating {
+                text-align: left;
+                margin: 0;
+                i{
+                    margin-left: 0;
+                }
+            }
+            ul {
+                list-style: none;
+                font-size: 14px;
+            }
+            .btn-explora {
+                font-size: 13px !important;
+                padding: 5px 10px;
+            }
+            .compartir-via {
+    
+                h6 {
+                    margin-bottom: 10px;
+                }
+                button{
+                    font-size: 15px;
+                    width: 30px;
+                    height: 30px;
+                    padding: 0;
+                    margin-right: 15px;
+                    border: 1px solid #e2e2e2;
+                    &:hover {
+                        border: 1px solid var(--bg-tercero);
+                    }
+                }
+            }
+        }
+
+        .btn-fav {
+            width: 40px !important;
+            height: 40px !important;
+            left: .4em;
+            border: 1px solid #ebebeb;
+        }
+        
+        .img-container {
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #e7e7e7;
+            padding: 0;
+            margin-bottom: 10px;
+            
+            img {
+              height: 100%;
+              object-fit: contain;
+            }
+        }
+        
+        .product-small-img {
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%; 
+        
+            img{
+              width: 70px;
+              height: 70px;
+              margin-right: 5px;
+              cursor: pointer;
+              object-fit: cover;
+              display: block;
+              background: #ffffff;
+              transition: .2s;
+              position: relative;
+              margin-bottom: 10px;
+              &:hover {
+                opacity: 1;
+              }
+            }
+        }     
+
+        @media only screen and (max-width: 992px) {
+            & {
+                grid-template-columns: 50% 50%;
+                align-items: flex-start;
+                
+                h4 {
+                    font-size: 20px;
+                }
+            }
+            .img-container {
+                height: 400px;
+            }
+            .product-small-img {
+                border: 1px solid #d8d8d8;
+                padding-top: 12px;
+            
+                img{
+                  width: 40px;
+                  height: 40px;
+                  margin-bottom: 12px;
+                }
+            }
+        }
+        @media only screen and (max-width: 768px) {
+        
+            & .btn-fav {
+                left: 2em;
+                top: .2em;
+            }
+            .img-container {
+                height: 350px;
+              }
+        }
+        @media only screen and (max-width: 600px) {
+            & {
+                grid-template-columns: 100%;
+            }
+        }
+    }
+
+    .box-input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 15px;
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+
+        input { 
+            max-width: 100px !important;
+            min-width: 60px;
+            width: 20px !important;
+            // padding: 0;
+
+        }
+        label { 
+            margin-bottom: 0; 
+            margin-right: 15px;
+            font-size: 13px;
+        }
+
+        .btn-outline-primary {
+            color: #272727;
+            border: 1px solid #999999;
+            border-radius: 5%;
+            background: #fff;
+            // height: 10px;
+
+            &:hover {
+                color: #272727;
+                border: 1px solid #2e2e2e;
+                background: #f7f7f7 !important;
+            }
+        }
+    }
+    // contenido opciones del producto
+
+    // reseñas single producto
+    .reseñas-single-producto  {
+        margin-top: 35px;
+    
+        .calificacion-general {
+            // float: left;
+            margin-right: 15px;
+            padding-bottom: 10px;
+    
+            .list-group {
+               
+                .list-group-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                }
+            }
+        }
+    
+        .comentarios {
+            max-height: 450px;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            margin-bottom: 10px;
+    
+            .media {
+    
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10%;
+                }
+    
+                .media-body {
+                    margin-left: 15px;
+    
+                    p { font-size: 13.5px; }
+    
+                    .d-flex {
+                        align-items: center;
+                        justify-content: left;
+                        margin-bottom: 10px;
+                        a {margin-right: -15px; font-size: 14px; }
+                        .rating { margin-right: 15px; margin-left: 20px; }
+                        span:  { color: #cccccc; };
+                    }
+                }
+            }
+        }
+    }
+    // reseñas single producto
+
+    // Modal para realizar Comentario
+    .comentar-Modal {
+
+        .modal-dialog {
+            max-width: 350px;
+            // text-align: center;
+        }
+    
+        .modal-body {
+            i { color:#FFB13B; }
+            label { font-size: 15px; margin-bottom: 0; margin-left: 10px;}
+            input, select{
+                height: 30px;
+                font-size: 14px;
+                // text-align: center;
+            }
+        }
+        
+    }
+    // Modal para realizar Comentario
+}
+
+// rating modal comentarios 
+.rating-coment {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    h5 {font-size: 19px; margin-bottom: 10px; font-weight: bold;}
+    .star{
+        color: #FFB13B;
+        font-size: 25px;
+        margin-right: 5px;
+      }
+      .star::before{
+        content: '\2606';    /* star outline */
+        cursor: pointer;
+      }
+      .star.rated::before{
+        /* the style for a selected star */
+        content: '\2605';  /* filled star */
+      }
+      
+      .stars{
+          counter-reset: rateme 0;   
+          font-size: 30px;
+          margin-right: 5px;
+        //   font-weight: 900;
+      }
+      .star.rated{
+          counter-increment: rateme 1;
+      }
+      .stars::after{
+          content: counter(rateme) '/5';
+          font-weight: bold;
+      }
+}
+// rating modal comentarios 
+
+// ----------------------------
+//  single-poduct details ------
+
+
+
+

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rootonoto:ital,wght@0,400;0,700;1,500&display=swap');
+
+
+// ESTILOS GENERALES
+@import "generales";
+
+// ESTILOS BARRA-TOP
+@import "barratop";
+// ESTILOS MENU
+@import "menu";
+// ESTILOS MENU ACORDEON
+@import "menuacordeon";
+
+// ---------------------------
+// ESTILOS MAIN 
+// ---------------------------
+
+// ESTILOS INDEX
+@import "index";
+
+// ESTILOS FOOTER
+@import "footer";
+
+// ESTILOS CAROUSEL
+@import "carousel";
+
+
+
+// ---------------------------
+// Tienda estilos
+// ---------------------------
+// ESTILOS T-CATEGORIAS
+@import "t-categorias";
+
+// ESTILOS T-filtros de las categorias
+@import "t-filtros";
+// ESTILOS T-productos
+@import "t-card";
+// ESTILOS T-paginacion
+@import "t-paginacion";
+// ESTILOS T-GRID
+@import "t-grid";
+// ESTILOS T-LISTA
+@import "t-lista";
+// ESTILOS T-CARRO  
+@import "t-carro";
+// ESTILOS T-SINGLE-PRODUCT
+@import "t-singleproduct";
+
+
+// ---------------------------
+// ESTILOS - CHECKOUT
+// ---------------------------
+@import "checkout";
+
+// ---------------------------
+// ESTILOS Blog
+// ---------------------------
+@import "blog";
+
+// ---------------------------
+// ESTILOS cuenta
+// ---------------------------
+@import "cuenta";
+
+// ---------------------------
+// ESTILOS CONTACTO
+// ---------------------------
+@import "contacto";
+
+
+// ESTILOS BOTONES PROPIOS
+@import "botones";
+// ESTILOS EFECTO AGREGAR AL CARRO y agregar a favoritos
+@import "addcart";
+
+// ESTILOS MODALES
+@import "modaloptions";
+
+
+

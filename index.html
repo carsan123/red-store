@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- css bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.css">       
+     <!-- css carousel slider -->
+    <link rel="stylesheet" type="text/css" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="owlcarousel/owl.theme.default.min.css">
+    
+    <!-- font awesome  -->
+    <link rel="stylesheet" rel="stylesheet" href="css/all.css">
+    <!-- css estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <script src="owlcarousel/jquery.min.js"></script>
+
+    <title>Red Store Index</title>
+</head>
+<body>
+      
+    <!-- barra top -->
+    <div class="contenedor-top">
+      <div class="barra-top">
+
+        <div class="top-left ">
+          <div class="icon-bar"><a href="" target="_blank"><i class="fab fa-twitter"></i></a> </div>
+          <div class="icon-bar"><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+          <div class="icon-bar"><a href="" target="_blank"><i class="fab fa-instagram"></i></a></div>
+        </div>
+
+        <div class="top-center">
+        </div>
+
+        <div class="top-right d-flex">
+
+          <div class="moneda-drop dropdown ">
+            <a href="#" class=""  data-toggle="dropdown" aria-expanded="false">
+              <button class="btn btn-b-propio btn-sm dropdown-toggle mr-2"> 
+                <small><i class="fas fa-dollar-sign "></i> USD</small>
+              </button>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item py-1 active" href="#"><small>USD</small></a></li>
+              <li><a class="dropdown-item py-1" href="#"><small>EUR</small></a></li>
+              <li><a class="dropdown-item py-1" href="#"><small>COP</small></a></li>
+              <li><a class="dropdown-item py-1" href="#"><small>RUB</small></a></li>
+            </div>
+          </div>
+
+          <!-- iniciar sesion drop -->
+          <div class="ingresar-dropdown dropdown">
+            <a href="#" data-toggle="dropdown" data-offset="20,10" aria-expanded="false">
+
+              <button class="btn btn-sm btn-b-propio">
+                <i class="fa fa-user mr-1 "></i>
+                <small>Ingresar <i class="fa fa-caret-down"></i></small>
+              </button>                  
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" >
+              <form class="py-2 px-3">
+                <div class="form-group">
+                  <label for="dropdownEmail">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="dropdownEmail" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="dropdownPassword">Contraseña</label>
+                  <input type="password" class="form-control" id="dropdownPassword" placeholder="Contraseña">
+                </div>
+                <button type="submit" class="btn btn-a-propio p-2">Iniciar Sesión</button>
+                <div class="form-group mt-2">
+                  <div class="form-check d-flex">
+                    <input type="checkbox" class="form-check-input" id="recuerdameCheck">
+                    <label class="form-check-label" for="recuerdameCheck">
+                      <small>Recuérdame</small>
+                    </label>
+                  </div>
+                
+                </div>
+              </form>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="cuenta-signin.html"><small>¿No tienes una Cuenta? Regístrate.</small></a>
+                <a class="dropdown-item" href="cuenta-olvidaste.html">¿Olvidaste tu Contraseña?</a>
+                <h6 class="text-center mt-3">Ingresa Vía:</h6>
+                <div class="ingresa-icons">
+                  <div class="icon-ing"><a type="submit"><i class="fab fa-twitter"></i></a> </div>
+                  <div class="icon-ing"><a type="submit"><i class="fab fa-facebook-f"></i></a></div>
+                  <div class="icon-ing"><a type="submit"><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div> <!--  dropdown-menu .// -->
+          </div>
+          <!-- iniciar sesion drop -->
+
+          <!-- SESION INICIADA -->
+          <!-- drop con la sesion iniciada -->
+          <div class="sesion-on dropdown d-none">
+            <a href="#" data-toggle="dropdown" data-offset="20,10" aria-expanded="false">
+
+              <button class="btn btn-sm btn-light">
+                <i class="fa fa-user mr-1 "></i>
+                <small>Hola, Juan <i class="fa fa-caret-down"></i></small>
+              </button>                  
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" >
+
+                <a class="dropdown-item" href="cuenta-lista.html"><i class="fas fa-shopping-cart"></i> Mis Pedios</a>
+                <a class="dropdown-item" href="cuenta-favoritos.html"><i class="far fa-heart"></i> Favoritos</a>
+                <a class="dropdown-item" href="cuenta-perfil.html"><i class="fas fa-cog"></i> Configuración</a>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="cuenta-signin.html"><i class="fas fa-sign-out-alt text-danger"></i> Cerrar Sesión</a>
+
+            </div> <!--  dropdown-menu .// -->
+          </div>
+          <!-- SESION INICIADA -->
+        </div>
+
+      </div>
+    </div>
+    <!-- barra top -->
+    
+    <!-- menu principal -->
+    <header>
+      <div class="menu">
+        
+        <!-- Button menu modal -->
+        <div class="boton-menu pt-2 ">
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn btn-light mr-1" data-toggle="modal" data-target="#menuModal">
+              <i class="fas fa-bars"></i>
+            </button>
+            <h6 class="h6-menu-text">Menú</h6>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <!-- logo -->
+
+        <!-- nav principal -->
+        <nav class="nav">
+
+          <div class="links"><a href="index.html">Inicio</a></div>
+
+          <!-- dropdown -->
+          <div class="links">
+            <a href="shop-categorias.html">Tienda</a>
+            <div class="drop-links">
+              <a href="shop-categorias.html">T - Categorias</a>
+              <a href="shop-grid.html">T - Grid</a>
+              <a href="shop-lista.html">T - Lista</a>
+              <a href="shop-carro.html">T - Carro</a>
+
+              <!-- sub-dropdown a la derecha -->
+              <div class="sub-drop-links">
+                <a href="check-envio.html">
+                  <span>T - Checkout</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+                <div class="show-sud-drop">
+                  <a href="check-envio.html">Checkout - Envío</a>
+                  <a href="check-pago.html">Checkout - Pago</a>
+                  <a href="check-revision.html">Checkout - Revisión</a>
+                  <a href="check-completado.html">Checkout - Completado</a>
+                </div>
+              </div>
+              <!-- sub-dropdown a la derecha -->
+              
+              <a href="shop-single.html">T - Single Product</a>
+            </div>
+          </div>
+          <!-- dropdown -->
+
+          <!-- megamenu -->
+          <div class="links">
+            <a href="shop-grid.html" >Mega Menu</a>
+            <div class="megamenu">
+              <div class="menu-block">
+                <div class="title"><h4>Hombres</h4></div>
+                <a href="shop-grid.html">Camisas</a>
+                <a href="shop-grid.html">Camisetas</a>
+                <a href="shop-grid.html">Pantalones</a>
+                <a href="shop-grid.html">Pantalonetas</a>
+                <a href="shop-grid.html">Sudaderas</a>
+              </div>
+              <div class="menu-block">
+                <div class="title"><h4>Mujer</h4></div>
+                <a href="shop-grid.html">Blusas</a>
+                <a href="shop-grid.html">Camisas</a>
+                <a href="shop-grid.html">Camisetas</a>
+                <a href="shop-grid.html">Pantalones</a>
+                <a href="shop-grid.html">Faldas</a>
+              </div>
+              <div class="menu-block">
+                <div class="title"><h4>Niños</h4></div>
+                <a href="shop-">Camisas</a>
+                <a href="shop-grid.html">Camisetas</a>
+                <a href="shop-grid.html">Pantalones</a>
+                <a href="shop-grid.html">Pantalonetas</a>
+                <a href="shop-grid.html">Sudaderas</a>
+              </div>
+              <div class="menu-block">
+                <div class="title"><h4>Niña</h4></div>
+                <a href="shop-grid.html">Blusas</a>
+                <a href="shop-grid.html">Camisas</a>
+                <a href="shop-grid.html">Camisetas</a>
+                <a href="shop-grid.html">Pantalones</a>
+                <a href="shop-grid.html">Faldas</a>
+              </div>
+              <div class="menu-block">
+                <a href="shop-grid.html"><img src="images/category-1.jpg" class="img-fluid" alt=""></a>
+                <a href="shop-grid.html">Comprar Ahora.</a>
+              </div>
+            </div>
+          </div>
+          <!-- megamenu -->
+
+          <!-- dropdowm  -->
+          <div class="links">
+            <a href="cuenta-perfil.html">Cuenta</a>
+            <div class="drop-links">
+              <a href="cuenta-signin.html">Sign In - Out</a>
+              <a href="cuenta-perfil.html">Detalles Perfil</a>
+              <a href="cuenta-pedidos.html">Detalles Pedidos</a>
+              <a href="cuenta-lista.html">Detalles Lista</a>
+              <a href="cuenta-favoritos.html">Favoritos</a>
+              <a href="cuenta-direccion.html">Dirección</a>
+            </div>
+          </div>
+          <!-- dropdowm  -->
+
+          <!-- dropdowm  -->
+          <div class="links">
+            <a href="blog-post.html">Blog</a>
+            <div class="drop-links">
+              <a href="blog-post.html">Post -Grid</a>
+              <a href="blog-list.html">Post - List</a>
+              <a href="blog-single.html">Single Post</a>
+            </div>
+          </div>
+          <!-- dropdowm  -->
+
+          <!-- dropdowm  -->
+          <div class="links">
+            <a href="nosotros.html">Nosotros</a>
+            <div class="drop-links">
+              <a href="nosotros.html">Nosotros</a>
+              <a href="faq.html">Preguntas</a>
+              <a href="politicas.html">Politicas de Privacidad</a>
+              <a href="terminos.html">Términos y Condiciones</a>
+              <a href="404.html">404 Error</a>
+            </div>
+          </div>
+          <!-- dropdowm  -->
+          
+
+          <div class="links"><a href="contacto.html">Contácto</a></div>
+        </nav>
+        <!-- nav principal -->
+
+        <!-- iconos -->
+        <div class="iconos">
+          
+          <!-- search lupa -->
+          <div class="i-lupa">
+            <div class="btn-group buscador-drop">
+              <a type="button" class="btn dropdown" data-toggle="dropdown" id="buscadorDrop" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search"></i>
+              </a>
+              <div id="buscar-drop" class="dropdown-menu dropdown-menu-right" aria-labelledby="buscadorDrop">
+                <input class="mb-2" type="text" placeholder="Buscar" id="myInput" onkeyup="filterFunction()">
+                <span class="busca-por">Busca por nombre, código o palabra clave.
+                  Presiona enter para buscar.</span>
+
+                <br class="mb-3">
+
+                <a href="#Camisetas">
+                  <img src="images/product-1.jpg" alt="">
+                  <span>Camisetas</span>
+                </a>
+                <a href="#Zapatos">
+                  <img src="images/product-2.jpg" alt="">
+                  <span>Zapatos</span>
+                </a>
+                <a href="#Pantalones">
+                  <img src="images/product-3.jpg" alt="">
+                  <span>Pantalones</span>
+                </a>
+                <a href="#Polos">
+                  <img src="images/product-4.jpg" alt="">
+                  <span>Polos</span>
+                </a>
+                <a href="#Zapatos Casuales">
+                  <img src="images/product-5.jpg" alt="">
+                  <span>Zapatos Casuales</span>
+                </a>
+                <a href="#Camisetas Hombre">
+                  <img src="images/product-6.jpg" alt="">
+                  <span>Camisetas Hombre</span>
+                </a>
+                <a href="#Medias">
+                  <img src="images/product-7.jpg" alt="">
+                  <span>Medias</span>
+                </a>
+                <a href="#Relojes">
+                  <img src="images/product-8.jpg" alt="">
+                  <span>Relojes</span>
+                </a>
+                <a href="#RelojesDeportivos">
+                  <img src="images/product-9.jpg" alt="">
+                  <span>Relojes Deportivos</span>
+                </a>
+                <a href="#PantalonMujerTennis Hombre=">
+                   <img src="images/product-10.jpg" alt=""> 
+                  <span>Tennis Hombre</span>
+                </a>
+                <a href="#Tennis Mujer">
+                  <img src="images/product-11.jpg" alt="">
+                  <span>Tennis Mujer</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- search lupa -->
+
+          <!-- icono favorito -->
+          <div class="i-favoritos">
+            <div id="ad-fav" class="cont-icon-shake" data-totalitems="0">
+              <a href="cuenta-favoritos.html">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- icono favorito -->
+
+          <!-- carro -->
+          <div class="i-carro">
+            <div id="ad-cart" class="cont-icon-shake" data-totalitems="0">
+              <a data-toggle="modal" data-target="#cartModal">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- carro -->
+                                                
+        </div>
+        <!-- iconos -->
+
+      </div>
+    </header>
+    <!-- menu principal -->
+
+    <main class="main">    
+
+      
+      <div class="container">
+        <!-- Banner caroudel -->
+        <section class="banner-area">
+          <div id="owl-banner" class="owl-carousel owl-theme">
+            <div class="item">
+              <a href="shop-single.html"><img src="images/Banner1.png" alt="Banner 1"></a>
+            </div>
+            <div class="item">            
+              <a href="shop-grid.html"><img src="images/Banner2.png" alt="Banner 2"></a>
+            </div>
+          </div>
+        </section>
+        <!-- Banner caroudel -->
+
+        <!-- SERVICIOS BLOQUE -->
+        <div class="mt-5 servicios-bloque">
+          <h2 class="tittle">Categorias</h2>   
+
+          <div class="row text-left mt-md-5 mt-3">
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                <a href="shop-grid.html">
+                    <div class="media">
+                      <button class="btn btn-icon btn-lg rounded-circle btn-faded-primary active" type="button">
+                          <i class="fas fa-tshirt"></i>
+                      </button>
+                      <div class="media-body ml-3">
+                        <h6>Ropa Para Hombre</h6>
+                        <span class="text-secondary font-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                      </div>
+                    </div>              
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                <a href="shop-grid.html">
+                    <div class="media">
+                      <button class="btn btn-icon btn-lg rounded-circle btn-faded-primary active" type="button">
+                         <i class="fas fa-shoe-prints"></i>
+                      </button>
+                      <div class="media-body ml-3">
+                        <h6>Zapatos</h6>
+                        <span class="text-secondary font-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                <a href="shop-grid.html">
+                    <div class="media">
+                      <button class="btn btn-icon btn-lg rounded-circle btn-faded-primary active" type="button">
+                          <i class="fas fa-tshirt"></i>
+                      </button>
+                      <div class="media-body ml-3">
+                        <h6>Ropa para Mujer</h6>
+                        <span class="text-secondary font-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                <a href="shop-grid.html">
+                    <div class="media">
+                      <button class="btn btn-icon btn-lg rounded-circle btn-faded-primary active" type="button">
+                          <i class="fas fa-hat-cowboy-side"></i>
+                      </button>
+                      <div class="media-body ml-3">
+                        <h6>Acesorios</h6>
+                        <span class="text-secondary font-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                </div>
+                    </div>
+                </a>  
+            </div>
+          </div>
+
+        </div>
+        <!-- SERVICIOS BLOQUE -->
+               
+        <!-- carousel nuevos productos -->
+        <section class="mt-3 mt-md-5 p-3">
+          <h2 class="tittle">Nuevos Productos</h2>        
+          <div id="owl-news" class="owl-carousel owl-theme" >
+                
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Roja Hombre</h5>
+                </div>
+              </a>
+              
+
+              <div class="card-footer">
+                <div class="price-footer">$50.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zapatos Negros</h5>
+                </div>
+              </a>                   
+              <div class="card-footer">
+                <div class="price-footer">$90.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pantalón Gris</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$40.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Azúl Hombre</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$33.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zapatos Grises</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$85.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Negra Hombre</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$35.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reloj</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$140.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reloj Deportivo</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$130.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+              
+          </div>      
+        </section>
+        <!-- carousel nuevos productos -->        
+        
+        <hr class="my-lg-5 my-3">
+
+        <!-- carousel productos destacados -->    
+        <section class="mt-3 mt-md-5 p-3">
+          <h2 class="tittle">Productos Destacados</h2>        
+          <div id="owl-destacados" class="owl-carousel owl-theme" >
+                
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zapatos Grises</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$85.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Negra Hombre</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$35.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reloj</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$140.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Reloj Deportivo</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$130.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Roja Hombre</h5>
+                </div>
+              </a>
+              
+
+              <div class="card-footer">
+                <div class="price-footer">$50.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zapatos Negros</h5>
+                </div>
+              </a>                   
+              <div class="card-footer">
+                <div class="price-footer">$90.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pantalón Gris</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$40.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card card-producto">
+              <button class="btn btn-icon btn-text-danger rounded-circle btn-fav ad-fav" data-toggle="button" title="Agregar a Favoritos"></button>
+              <a href="shop-single.html">
+                <img src="images/product-4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Azúl Hombre</h5>
+                </div>
+              </a>
+              <div class="card-footer">
+                <div class="price-footer">$33.000</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+              
+          </div>     
+        </section>       
+        <!-- carousel productos destacados -->    
+        
+        <hr class="my-lg-5 my-3">
+        
+        <!-- categorias -->
+        <section class="mt-3 mt-md-5">
+          <h2 class="tittle">Categorias</h2>    
+          <div class="categories">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-3 col-6">
+                          <a href="shop-grid.html">
+                              <img src="images/category-1.jpg" class="img-fluid" alt="">
+                              <h4>Deportivos</h4>
+                          </a>
+                      </div>
+                      <div class="col-md-3 col-6">
+                          <a href="shop-grid.html">
+                              <img src="images/category-2.jpg" class="img-fluid" alt="">
+                              <h4>Zapatos</h4>
+                          </a>
+                      </div>
+                      <div class="col-md-3 col-6">
+                          <a href="shop-grid.html">
+                              <img src="images/category-3.jpg" class="img-fluid" alt="">
+                              <h4>Mujeres</h4>
+                          </a>
+                      </div>
+                      <div class="col-md-3 col-6">
+                        <a href="shop-grid.html">
+                            <img src="images/category-1.jpg" class="img-fluid" alt="">
+                            <h4>Protección</h4>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- categorias -->    
+        
+        <!-- section informacion escrita -->
+        <section class="mt-3 mt-md-5 p-3 text-justify">
+          <h2 class="tittle">Información</h2>   
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, atque recusandae nam obcaecati unde qui similique officiis harum corrupti delectus neque error blanditiis, reiciendis impedit sit cumque tempora hic suscipit ut perferendis aperiam nulla iure culpa. Expedita aspernatur, quidem ad omnis enim temporibus deserunt veritatis corrupti voluptas amet debitis sint dolorem natus. Ea necessitatibus cupiditate doloribus perferendis iusto quo voluptatum.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, veniam. Praesentium blanditiis consequuntur, explicabo quos aspernatur dolore animi, veritatis a, saepe necessitatibus possimus mollitia atque soluta ad exercitationem modi eaque.</p>
+        </section>
+        <!-- section informacion escrita -->
+        
+        <!-- ofertas -->
+        <div class="offer my-lg-5 my-3 pb-lg-0 pb-3">
+          <a href="shop-grid.html">
+            <div class="container">
+
+              <div class="row">
+                <div class="col col-md-5">
+                  <img src="images/exclusive.png" class="offer-img" alt="">
+                </div>
+                <div class="col col-md-6">
+                  <p>Lorem ipsum dolor sit.</p>
+                  <h1>smart Band 4</h1>
+                  orem ipsum dolor sit, amet consectetur adipisicing elit. Iste doloribus animi incidunt ex, officiis omnis?
+                  <a href="" class="btn-explora">Compra Ahora &#8594;</a>
+                </div>
+              </div>   
+
+            </div>
+          </a>
+        </div>
+        <!-- ofertas -->
+
+        <!-- testimonios -->
+        <div class="testimonial">
+            <div class="small-container">
+
+                <div class="row">
+                    <div class="col-md-3 col-12">
+                      <div class="card">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis rem quaerat ducimus vel harum voluptates ut adipisci! Cum, exercitationem.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <img src="images/user-1.png" alt="">
+                        <h3>Susan Lorem</h3>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                      <div class="card">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis rem quaerat ducimus vel harum voluptates ut adipisci! Cum, exercitationem.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <img src="images/user-2.png" alt="">
+                        <h3>Susan Lorem</h3>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                      <div class="card">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis rem quaerat ducimus vel harum voluptates ut adipisci! Cum, exercitationem.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <img src="images/user-3.png" alt="">
+                        <h3>Susan Lorem</h3>
+                      </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- testimonios -->      
+    
+        <!-- brands -->
+        <div class="brands mt-md-5 mt-3">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-md-2 col-4">
+                        <img src="images/logo-godrej.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <img src="images/logo-oppo.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <img src="images/logo-paypal.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <img src="images/logo-philips.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <img src="images/logo-coca-cola.png" class="img-fluid" alt="">
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <!-- brands -->
+
+      </div>
+
+    </main>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descarga nuesta App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <div class="app-logo">
+                      <a href="#"><img src="images/play-store.png" alt=""></a>
+                      <a href="#"><img src="images/app-store.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="images/logo-white.png" class="mb-3" alt=""></a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nesciunt libero consequuntur veritatis sit nisi.</p>
+              
+                    <form class="px-3 text-center">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1"><h3 class="mb-0">Suscríbete.</h3></label>
+                        <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@ Correo Electrónico">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" form="terminosCheked" id="terminosCheked" checked>
+                        <label class="form-check-label" for="terminosCheked"><span>Acepto Términos y Condiciones</span> </label>
+                                           
+                      </div>
+                      <button type="submit" class="btn btn-explora">Suscribirse</button>
+                    </form>
+
+                </div>
+                <div class="footer-col-3 footer-ul">
+                    <h3>Otros Links</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="faq.html">Preguntas</a></li>
+                        <li><a href="politicas.html">Politicas de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4 footer-ul">
+                    <h3>Encuéntranos</h3>
+                    <ul>
+                        <li><a href="" target="_blanck"><i class="fab fa-facebook-square"></i> Facebook </a></li>
+                        <li><a href="" target="_blanck"><i class="fab fa-twitter"></i> Twitter  </a></li>
+                        <li><a href="" target="_blanck"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="" target="_blanck"><i class="fab fa-youtube"></i> Youtube  </a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright 2020 - Vitartek</p>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <!-- Menu Modal  acordeon -->
+    <div class="modal fade modal-content-left modal-menu" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="images/logo.png" alt="Logo Empresariar" class="img-modal-header">
+            <h5 class="modal-title" id="menuModalLabel">Menú</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!-- Menu Acordeon -->
+          <div class="modal-body px-0 py-0">
+
+              <ul id="accordion" class="accordion">
+                
+                <!-- link solo  -->
+                <li class="default open">
+                  <div class="link">
+                    <i class="fas fa-home"></i>
+                    <a href="index.html">
+                      Inicio
+                    </a>
+                  </div>
+                </li>
+                <!-- link solo  -->
+                
+                <!-- dropdown -->
+                <li>
+                  <div class="link d-flex justify-content-between"><i class="fas fa-shopping-cart"></i>Tienda<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li>
+                      <a href="shop-categorias.html">T - Categorias</a>
+                    </li>
+                    <li>
+                      <a href="shop-grid.html">T - Grid</a>
+                    </li>
+                    <li><a href="shop-lista.html">T - Lista</a></li>                    
+                    <li><a href="shop-carro.html">T - Carro</a></li>
+                    <!-- sub acordeon Menu  -->
+                    <li>
+                      <div class="dropdown-sub">
+                        <a class="d-s-accordion">T - Checkout <i class="fas fa-chevron-down"></i> </a>
+                        <div class="accordionDrop" style="display: inline-block;">
+                          <ul class="accordion-submenu">
+                            <li><a href="check-envio.html">Checkout Envío</a></li>
+                            <li><a href="check-pago.html">Checkout Pago</a></li>
+                            <li><a href="check-revision.html">Checkout Revisión</a></li>
+                            <li><a href="check-completado.html">Checkout Completado</a></li>
+                          </ul>
+                         </div>          
+                      </div>
+                    </li>
+                    <!-- sub acordeon Menu  -->
+                    
+                    <li><a href="shop-single.html">T - Single Product</a></li>
+                  </ul>
+                
+                </li>
+                 <!-- dropdown -->
+               
+                <!-- mega menu  -->
+                <li>
+                  <div class="link"><i class="fas fa-tag"></i></i>Mega Menú<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+
+                    <!-- acordeon-megamenu -->
+                    <!-- se utiliza acordion-megamenu para organizar todas las categorias posibles -->
+                    <div class="acordeon-megamenu">
+                      <div class="title"><h4>Hombres</h4></div>
+                      <a href="shop-grid.html">Camisas</a>
+                      <a href="shop-grid.html">Camisetas</a>
+                      <a href="shop-grid.html">Pantalones</a>
+                      <a href="shop-grid.html">Pantalonetas</a>
+                      <a href="shop-grid.html">Sudaderas</a>
+                  
+                      <hr>  
+                  
+                      <div class="title"><h4>Niños</h4></div>
+                      <a href="shop-grid.html">Camisas</a>
+                      <a href="shop-grid.html">Camisetas</a>
+                      <a href="shop-grid.html">Pantalones</a>
+                      <a href="shop-grid.html">Pantalonetas</a>
+                      <a href="shop-grid.html">Sudaderas</a>
+                  
+                      <hr>  
+                  
+                      <div class="title"><h4>Mujer</h4></div>
+                      <a href="shop-grid.html">Blusas</a>
+                      <a href="shop-grid.html">Camisas</a>
+                      <a href="shop-grid.html">Camisetas</a>
+                      <a href="shop-grid.html">Pantalones</a>
+                      <a href="shop-grid.html">Faldas</a>
+                  
+                      <hr>  
+                  
+                      <div class="title"><h4>Niñas</h4></div>
+                      <a href="shop-grid.html">Blusas</a>
+                      <a href="shop-grid.html">Camisas</a>
+                      <a href="shop-grid.html">Camisetas</a>
+                      <a href="shop-grid.html">Pantalones</a>
+                      <a href="shop-grid.html">Faldas</a>
+                    </div>
+                    <!-- acordeon-megamenu -->
+                   
+                  </ul>
+                </li>
+                <!-- mega menu  -->
+
+                <!-- dropdown -->
+                <li>
+                  <div class="link"><i class="fas fa-user"></i>Cuenta<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li><a href="cuenta-signin.html">Sign In - Out</a></li>
+                    <li><a href="cuenta-perfil.html">Detalles Perfil</a></li>
+                    <li><a href="cuenta-pedidos.html">Detalles Pedidos</a></li>
+                    <li><a href="cuenta-lista.html">Detalles Lista</a></li>
+                    <li><a href="cuenta-favoritos.html">Favoritos</a></li>
+                    <li><a href="cuenta-direccion.html">Dirección</a></li>
+                  </ul>
+                </li>
+                <!-- dropdown -->
+
+                <!-- dropdown -->
+                <li>
+                  <div class="link"><i class="fas fa-rss"></i></i>Blog<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">
+                    <li><a href="blog-post.html">Post -Grid</a></li>
+                    <li><a href="blog-list.html">Post - List</a></li>
+                    <li><a href="blog-single.html">Single Post</a></li>
+                  </ul>
+                </li>
+                <!-- dropdown -->
+
+                <!-- dropdown -->
+                <li>
+                  <div class="link"><i class="fas fa-rss"></i></i>Nosotros<i class="fa fa-chevron-down"></i></div>
+                  <ul class="submenu">                      
+                    <li><a href="nosotros.html"">Nosotros</a></li>
+                    <li><a href="faq.html">Preguntas</a></li>
+                    <li><a href="politicas.html">Politicas de Privacidad</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    <li><a href="404.html">404 Error</a></li>
+                  </ul>
+                </li>
+                <!-- dropdown -->
+
+                <!-- link solo  -->
+                <li>
+                  <div class="link">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="contacto.html">
+                      Contácto
+                    </a>
+                  </div>
+                </li>
+                <!-- link solo  -->
+
+              </ul>
+
+          </div>
+          <!-- Menu Acordeon -->
+
+          <!-- redes acordeon menu -->
+          <h5 class="pl-3">Síguenos en:</h5>
+          <div class="redes-acordeon">
+            <div class="icon-redes"><a href="" target="_blank"><i class="fab fa-twitter"></i></a> </div>
+            <div class="icon-redes"><a href="" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="icon-redes"><a href="" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            <div class="icon-redes"><a href="" target="_blank"><i class="fab fa-youtube"></i></a></div>
+          </div>
+          <!-- redes acordeon menu -->
+
+          <div class="modal-footer border-topborder-top">
+            <a href="cuenta-signin.html" class="btn btn-c-propio"><i class="fas fa-user mr-1"></i> Ingresar</a>
+            <button type="submit" class="btn btn-sm btn-outline-dark"><i class="fas fa-sign-out-alt"></i> Salir</button>
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button> -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Menu Modal  acordeon -->
+
+    <!-- Cart Modal -->
+    <div class="modal fade modal-content-right modal-carro"  id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom">
+            <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+              <i class="fas fa-times"></i>
+            </button>
+            <h5 class="modal-title" id="cartModalLabel">Tienes <u>4 Items</u> <i class="fas fa-shopping-cart"></i></h5>
+          </div>
+          <div class="modal-body scrollbar-width-thin">
+
+            <ul class="list-group list-group-flush lista-cart">
+
+              <li class="list-group-item px-0">
+                <div class="media">
+                  <a href="single-product.html" class="mr-2"><img src="images/product-1.jpg"  alt="Camiseta Roja"></a>
+                  <div class="media-body">
+                    <a href="single-product.html" class="d-block text-body" title="Camiseta Roja">Camiseta Roja</a>
+                    <span>Talla: S</span>
+                    <span class="text-muted pan-1">$15.300  <small>Cantidad: 1</small></span>
+                  </div>
+                  <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><i class="fas fa-times"></i></button>
+                </div>
+              </li>
+
+              <li class="list-group-item px-0">
+                <div class="media">
+                  <a href="single-product.html" class="mr-2"><img src="images/product-2.jpg"   alt="Zapatos Blanco y Negro" ></a>
+                  <div class="media-body">
+                    <a href="single-product.html" class="d-block text-body" title="Zapatos Blanco y Negro">Zapatos Blanco y Negro</a>
+                    <span>Talla: 39</span>
+                    <span class="text-muted">$35.500  <small>Cantidad: 1</small></span>
+                  </div>
+                  <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><i class="fas fa-times"></i></button>
+                </div>
+              </li>
+
+              <li class="list-group-item px-0">
+                <div class="media">
+                  <a href="single-product.html" class="mr-2"><img src="images/product-3.jpg"   alt="Pantalon Licra Gris" ></a>
+                  <div class="media-body">
+                    <a href="single-product.html" class="d-block text-body" title="Pantalon Licra Gris">Pantalon Licra Gris</a>
+                    <span>Talla: 32</span>
+                    <span class="text-muted">$60.500  <small>Cantidad: 2</small></span>
+                  </div>
+                  <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><i class="fas fa-times"></i></button>
+                </div>
+              </li>
+
+              <li class="list-group-item px-0">
+                <div class="media">
+                  <a href="single-product.html" class="mr-2"><img src="images/product-4.jpg" alt="Camiseta Azul Hombre" ></a>
+                  <div class="media-body">
+                    <a href="single-product.html" class="d-block text-body" title="Camiseta Azul Hombre">Camiseta Azul Hombre</a>
+                    <span>Talla: L</span>
+                    <span class="text-muted">$80.500  <small>Cantidad: 1</small></span>
+                  </div>
+                  <button class="btn btn-icon btn-sm btn-text-danger rounded-circle" type="button"><i class="fas fa-times"></i></button>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <div class="modal-footer border-top d-flex justify-content-between">
+            <div class="d-flex justif-content-left align-items-center">
+              <h6 class="mb-0 mr-2">Total: </h6>
+              <h5 class="mb-0 text-dark font-weight-bold font-condensed">$191.800</h5>
+            </div>
+            <div class="text-right d-block ">
+              <a href="shop-carro.html" class="btn btn-sm btn-c-propio">Ver Carro</a>
+              <!-- <a href="shipping.html" class="btn btn-success">Checkout</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+    <!-- Cart Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-3.5.1.min.js" ></script>
+    
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+    <script src="owlcarousel/owl.carousel.js"></script>
+
+</body>
+</html>

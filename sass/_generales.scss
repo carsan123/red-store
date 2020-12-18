@@ -1,0 +1,485 @@
+// ----------------
+// ESTILOS GENERALES
+// ----------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    font-size: 15px;
+}
+a{  
+    text-decoration: none;
+    color: #555; 
+}
+a:hover { 
+    text-decoration: none;
+    color: inherit; 
+}
+p { color: #555; }
+
+h1 {font-size: 32px;}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
+h4 {font-size: 17px;}
+
+@media only screen and (max-width: 992px) {
+    body{font-size: 14px;}
+    h1 {font-size: 30px;}
+    h2 {font-size: 22px;}
+    h3 {font-size: 18px;}
+    h4 {font-size: 16px;}
+}
+@media only screen and (max-width: 768px) {
+    body{font-size: 13px;}
+    h1 {font-size: 28px;}
+    h2 {font-size: 20px;}
+    h3 {font-size: 17px;}
+    h4 {font-size: 15px;}
+}
+@media only screen and (max-width: 576px) {
+    h1 {font-size: 25px;}
+
+}
+
+.container {
+    max-width: 1200px !important;
+    margin: auto !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-bottom: 30px;
+}
+.small-container {
+    max-width: 1080px !important;
+    margin: auto !important;
+    padding: 0px 1%;
+}
+@media only screen and (max-width: 992px) {
+    .small-container {
+        padding: 10px 30px;
+    }
+    .container {
+        padding: 1%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .small-container {
+        padding: 10px 20px;
+    }
+    .container {
+        padding: 1%;
+    }
+}
+
+// --------------------
+// ROW OPTIONS
+// --------------------
+.row {
+  // align-items: center;
+  justify-content: center;
+}
+
+/* row margenes */
+.canales-3 {
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+  }
+  
+  .canales-3 > .col,
+  .canales-3 > [class*="col-"] {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+/* row margenes */
+
+.txt-first {color: #ff523b;}
+.txt-verde {color: #6ec51c;}
+
+.bg-first {
+    background: #ff523b;
+    color: #fff;
+}
+
+/* ---------- */
+/* variables */
+/* -------- */
+:root {
+    --bg-primero: #131313; /* bg color negro */
+    --bg-segundo: #ffffff; /* bg color Blanco */
+    --bg-drops: #ffffff;    /* bg color Blanco  para dropdown menu */
+    --bg-tercero: #ff523b; /* bg color naranja */
+
+    --text-primero: #313131; /* Text color Negro*/
+    --text-segundo: #ffffff; /* Text color Blanco*/
+
+    /* variables para acordeon menu */
+    /* texto */
+        --txt-ac-primary: #4d4d4d; /* Text color Gris*/
+        --txt-ac-second: #ffffff; /* Text color Blanco Links .active*/
+        --txt-ac-third: #ff523b; /* Text color Naranja Links submenus .active*/
+        /* backgrounds */
+        --bg-ac-primary: #202020;  /* bg color Negro Links .active */
+    /* variables para acordeon menu */
+}
+/* ---------- */
+/* variables */
+/* -------- */
+
+
+/* ICON-INPUT */
+.icon-input {
+    position: relative;
+    display: block;
+  }
+  .icon-input > i {
+    position: absolute;
+  }  
+  .icon-input > i {
+    top: 10px;
+  }  
+  .icon-input.icon-input-sm > i {
+    top: 5px;
+    font-size: 1.32rem !important;
+  }  
+  .icon-input.icon-input-lg > i {
+    top: 10px;
+    font-size: 1.91rem !important;
+  }  
+  .icon-input:not(.icon-input-right) > i {
+    left: 0.51rem;
+  }  
+  .icon-input.icon-input-sm:not(.icon-input-right) > i {
+    left: 0.31rem;
+  }  
+  .icon-input.icon-input-lg:not(.icon-input-right) > i {
+    left: 0.81rem;
+  }  
+  .icon-input:not(.icon-input-right) > input.form-control {
+    padding-left: 2rem;
+  }  
+  .icon-input.icon-input-sm:not(.icon-input-right) > input.form-control-sm {
+    padding-left: 1.9rem;
+  }  
+  .icon-input.icon-input-lg:not(.icon-input-right) > input.form-control-lg {
+    padding-left: 2.9rem;
+  }  
+  .icon-input:not(.icon-input-right) > textarea.form-control {
+    padding-left: 2.23rem;
+  }  
+  .icon-input.icon-input-sm:not(.icon-input-right) > textarea.form-control-sm {
+    padding-left: 1.8rem;
+  }  
+  .icon-input.icon-input-lg:not(.icon-input-right) > textarea.form-control-lg {
+    padding-left: 2.9rem;
+  }
+/* ICON-INPUT */
+
+/* breadcrumbs */
+@media only screen and (min-width: 300px) {
+    .breadcrumb-container {
+        background: #fafafa;
+        margin: auto;
+    } 
+    .breadcrumb-container .small-container {
+        padding: 0;
+    }
+    .breadcrumb { 
+        height: 100%;
+        background: #fafafa;
+        margin: 0;
+        margin-top: 0;
+        padding: 0px 5px !important;      
+    }
+    .breadcrumb .breadcrumb-item a{
+        font-size: 11px;
+        color: #575757;
+    }
+    .breadcrumb-item.active {
+        color: #696969;
+        font-weight: bold;
+        font-size: 11.5px;
+        margin-top: 3px;
+        letter-spacing: .7px;
+    }
+}
+/* breadcrumbs */
+
+// box input 
+.box-input {    
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  
+  // .spinner {
+  //     margin-top: 0;
+  //     height: 20px;            
+  //   }
+
+    .btn-outline-primary{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      color: #242424;
+      border: 1px solid #6e6e6e;
+      border-radius: 0%;
+
+      &:hover {
+        background: #f0f0f0;
+      }
+    }  
+    
+  //   label{
+  //     font-size: 10px;
+  //     margin-bottom: 0;
+  //     margin-right: 3px;
+  //   }
+    
+  //   input {
+  //     width: 40px;
+  //     height: 20px;
+  //     text-align: center;
+  //     font-size: 12px;
+  //     padding: 0 3px;
+  //   }
+}
+// box input 
+
+/* ------------------------------------------------------- */
+/* DESDE AQUI COMIENZAN LOS ESTILOS DEL MAIN HACIA ABAJO  */
+/* ----------------------------------------------------- */
+
+/* ------------- */
+/* main section */
+/* ----------- */
+main {
+    z-index: 100;
+    margin: auto;
+    
+    .small-container a h4 {
+        font-size: 16px;
+    }
+    .main .col-4 p{
+        font-size: 14px;
+    }
+}
+ 
+
+/* ----------------------- */
+/* Tittle */
+/* ---------------------- */
+.tittle {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    margin-bottom: 20px;
+    
+    &::after {
+        content: '';
+        background: #ff523b;
+        width: 80px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* ----------------------- */
+/* Tittle */
+/* ---------------------- */
+
+/* ----------------------- */
+/* AQUI PREGUNTAS FRECUENTES FAQ */
+/* ---------------------- */
+.container-faq {
+
+  h6 {
+    font-weight: bold;
+  }
+  p {
+      font-size: 14px;
+  }
+  img {
+      display: block;
+      width: 120px;
+      margin: auto;
+  }
+
+  .faq-icon {
+      background: var(--bg-tercero);
+      border-radius: 50%;
+      margin-right: 20px;
+      
+      i  {
+          width: 26px;
+          height: 26px;
+          color: #fff;
+          text-align: center;
+          line-height: 25px;
+          /* padding: 7px; */
+          font-size: 15px;
+          transform: rotate(180deg);
+      }
+  }
+}
+
+/* ----------------------- */
+/* AQUI PREGUNTAS FRECUENTES FAQ */
+/* ---------------------- */
+
+/* ----------------------- */
+/* AQUI NOSOTROS */
+/* ---------------------- */
+.nosotros {
+
+  p {
+      font-size: 14px;
+      text-align: justify;
+  }
+
+  .list-unstyled {
+
+    .media {
+      background: #fff2f2;
+      padding: 15px;
+      
+      img {
+        max-width: 100px;
+        border-radius: 50%;
+      }
+      .media-body h5  {
+          color: #616161;
+      }
+    }
+  }
+}  
+/* ----------------------- */
+/* AQUI NOSOTROS */
+/* ---------------------- */
+
+
+/* ------------------ */
+/* AQUI 404 error ------------*/
+/* ------------------ */
+.container-404 {
+    background: #f8f8f8;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    .btn {
+      font-weight: 500;
+      transition: all .3s linear;
+    }
+    .button-404:hover {
+      background-color: rgb(243, 243, 243);
+      color: var(--bg-tercero);
+    }
+    p {
+      font-size: 2em;
+      text-align: center;
+      font-weight: 100;
+    }
+    h1 {
+      color: var(--txt-ac-third);
+      text-align: center;
+      font-size: 15em;
+      font-weight: 100;
+      text-shadow: #afafaf 1px 1px, #eeeeee 2px 2px, #eeeeee 3px 3px,
+                   #d1d1d1 4px 4px, #d1d1d1 5px 5px, #d1d1d1 6px 6px, #d1d1d1 7px 7px,
+                   #c0c0ce 8px 8px;
+    }
+}
+/* ------------------ */
+/* AQUI 404 error ------------*/
+/* ------------------ */
+
+/* --------------- */
+/* AQUI PASOS  */
+.pasos {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 50px;
+    margin: auto;
+  }  
+  .pasos::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #d3d3d3;
+    top: 35px;
+  }  
+  .pasos > a {
+    position: relative;
+    color: #c7c7c7;
+    font-size: 14px;
+  }  
+  .pasos > a:hover {
+    text-decoration: none;
+  }  
+  .pasos > a::before {
+    content: attr(data-step);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ced1d6;
+    background-color: #fff;
+    border-radius: 20%;
+    top: -25px;
+    left: calc(50% - 25px);
+    text-align: center;
+    font-weight: 500;
+    padding-top: 1px;
+    font-size: 12px;
+  }  
+  .pasos > a.done::before {
+    content: '\2714';
+    text-align: center;
+    border-color: #6ec51c;
+    color:#6ec51c;
+  }  
+  .pasos > a.current {
+    color:#6ec51c;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .pasos > a.current::before {
+    text-align: center;
+    border-color:#6ec51c;
+    color: #6ec51c;
+  }
+  
+  .pasos > a:first-child::before {
+    left: 0;
+  }
+  
+  .pasos > a:last-child::before {
+    left: auto;
+    right: 0;
+  }
+
+  /* ------------------ */
+/* AQUI MEDIA QUERY ------------*/
+/* ------------------ */
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+}
+/* ------------------ */
+/* AQUI MEDIA QUERY ------------*/
+/* ------------------ */
+
+
